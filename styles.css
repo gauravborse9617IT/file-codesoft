@@ -1,18 +1,14 @@
 /* General Styles */
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.6;
     background-color: #fdfdfd;
-    color: #333;
-    scroll-behavior: smooth;
+    color: #444;
+    line-height: 1.6;
 }
 
-h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
-}
-
+/* Container for consistent padding */
 .container {
     width: 85%;
     max-width: 1200px;
@@ -20,200 +16,192 @@ h1, h2, h3 {
     padding: 20px;
 }
 
-/* Header Section with Overlay */
+/* Header Styles */
 header {
-    position: relative;
-    height: 100vh;
-    background: linear-gradient(135deg, #FF416C 0%, #FF4B2B 100%);
+    background: linear-gradient(135deg, #4b6cb7, #182848);
     color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    overflow: hidden;
-}
-
-header .header-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.4);
+    padding: 60px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 header p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-header .btn {
-    background: #fff;
-    color: #FF4B2B;
-    padding: 12px 25px;
-    border-radius: 25px;
     font-size: 1.2rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-header .btn:hover {
-    background: #ddd;
-}
-
-/* Features Section */
-#features {
-    padding: 60px 0;
-    background: #f4f9ff;
-    text-align: center;
-}
-
-#features h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    color: #FF416C;
-}
-
-.feature-boxes {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.box {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.box:hover {
-    transform: translateY(-10px);
-}
-
-.feature-icon {
-    width: 60px;
-    margin-bottom: 20px;
-}
-
-.box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #FF416C;
-}
-
-/* Call to Action Section */
-#cta {
-    background: #FF416C;
-    padding: 60px 0;
-    text-align: center;
-    color: #fff;
-}
-
-#cta h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-#cta .cta-btn {
-    background: #fff;
-    color: #FF416C;
-    padding: 15px 30px;
-    border-radius: 25px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-#cta .cta-btn:hover {
-    background: #ddd;
+    margin-top: 10px;
 }
 
 /* About Section */
 #about {
-    padding: 60px 0;
+    background-color: #fff;
     text-align: center;
-    background: #fff;
+    padding: 50px 0;
 }
 
-#about h2 {
-    font-size: 2.5rem;
+#about img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #4b6cb7;
     margin-bottom: 20px;
-    color: #FF416C;
+    transition: transform 0.3s ease-in-out;
+}
+
+#about img:hover {
+    transform: scale(1.1);
 }
 
 #about p {
     font-size: 1.1rem;
+    margin-top: 10px;
     color: #555;
 }
 
-.about-image {
+/* Skills Section */
+#skills {
+    background: #f4f9ff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#skills h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #4b6cb7;
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+}
+
+#skills li {
+    background: #4b6cb7;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+#skills li:hover {
+    background: #354a66;
+}
+
+/* Projects Section */
+#projects {
+    background: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+    color: #4b6cb7;
+}
+
+.project {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    width: 300px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project img {
     width: 100%;
-    max-width: 600px;
-    margin-top: 30px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #444;
+}
+
+.project p {
+    font-size: 0.9rem;
+    color: #666;
+    padding: 10px 15px;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+/* Resume Section */
+#resume {
+    background: #f4f9ff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#resume a {
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    background: #4b6cb7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+#resume a:hover {
+    background: #354a66;
 }
 
 /* Contact Section */
 #contact {
-    background: #f4f9ff;
-    padding: 60px 0;
+    background: #fff;
     text-align: center;
+    padding: 50px 0;
 }
 
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #FF416C;
+#contact p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #555;
 }
 
-form {
-    max-width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form textarea {
-    height: 100px;
-    resize: none;
-}
-
-form .btn {
-    background: #FF416C;
-    color: #fff;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-form .btn:hover {
-    background: #FF4B2B;
-}
-
-/* Footer */
+/* Footer Section */
 footer {
+    background: #182848;
+    color: #fff;
     text-align: center;
     padding: 20px 0;
-    background: #FF416C;
-    color: #fff;
+    font-size: 0.9rem;
     margin-top: 20px;
 }
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Hover Effects for Links */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
